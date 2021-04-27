@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>KcityWeather</title>
+<link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.min.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header id="main_header">
+        <div id="logo">
+            <a href="#">
+                <img src="../img/logo_W.png" alt="KcityWeather logo">
+            </a>
+        </div>
+        <div id="daytime">
+            <span class="day"></span> 
+            <span>|</span>
+            <span class="month"></span>
+            <span class="date"></span>
+            <span class="hours"></span>
+            <span>:</span>
+            <span class="minutes"></span>
+        </div>
+    </header>
+    <main id="main_content">
+        <div class="inner">
+            <p class="city_main"></p>
+            <span class="city_temp"></span>
+            <span class="city_icon"><img src="" alt="" id="city_img"></span>
+            <div id="etc">
+                <div class="etc">
+                    <i class="fas fa-tint"></i>
+                    <span class="city_humidity"></span>
+                </div>
+                <div class="etc">
+                    <i class="fas fa-wind"></i>
+                    <span class="city_wind"></span>
+                </div>
+                <div class="etc">
+                    <i class="fas fa-cloud"></i>
+                    <span class="city_cloud"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <side id="side_city">
+        <button id="arrow"><</button>
+        <div id="city_list">
+            <a href="#" class="city_link">
+                <span class="city" id="Seoul">Seoul</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Incheon">Incheon</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Daejeon">Daejeon</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Daegu">Daegu</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Ulsan">Ulsan</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Gwangju">Gwangju</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Busan">Busan</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+            <a href="#" class="city_link">
+                <span class="city" id="Jeju">Jeju</span>
+                <span class="city_img"><img src="" alt=""></span>
+                <span class="temp">-℃</span>
+            </a>
+        </div>
+    </side>
+    <footer id="main_footer">
+        <p>현재 사이트는 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.</p>
+    </footer>
+	<!--js 파일-->
+	<script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/responsive.js"></script>
+    <script src="../js/forecast.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/sub.js"></script>
+
+</body>
+</html>

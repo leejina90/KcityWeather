@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url(reset.css);
+
+/* 한글은 노토산스로 */
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Thin.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Thin.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Thin.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Light.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Light.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Light.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Regular.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Regular.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Regular.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Medium.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Medium.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Medium.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Bold.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Bold.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Bold.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Black.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Black.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Black.otf") format('opentype');
+} 
+/* 영문, 숫자는 오픈산스로 */
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    src: url("../fonts/openSans/OpenSans-SemiBold.woff2") format('woff2'),
+        url("../fonts/openSans/OpenSans-SemiBold.woff") format('woff'),
+        url("../fonts/openSans/OpenSans-SemiBold.otf") format('opentype');
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    font: 14px "NotoSansKR";
+    color: #ddd;
+    width: 100%;
+    min-width: 320px; /* 320px 이하는 작아지지 않게 */
+}
