@@ -9,6 +9,7 @@ $(function(){
                 $("#daytime_info").css({
                     "right":"400px"
                 });
+                $("#city_list").show();
             } else {
                 $("#side_city").width(50);
                 $("#arrow").text("◀");
@@ -16,6 +17,7 @@ $(function(){
                 $("#daytime_info").css({
                     "right":"50px"
                 });
+                $("#city_list").hide();
             }
         }
     });
@@ -25,9 +27,11 @@ $(function(){
             if($("#side_city").is(":hidden")) {
                 $("#side_city").slideDown(500);
                 $("#arrow_mobile").text("▲");
+                $("#city_list").show();
             } else {
                 $("#side_city").slideUp(500);
                 $("#arrow_mobile").text("▼");
+                $("#city_list").hide();
             }
         }
     });
@@ -40,13 +44,15 @@ $(function(){
             $("#side_city").slideDown();
 
             $("#side_city").width(50);
+            $("#city_list").hide();
 
 
         } else {
             $("#arrow_mobile").show();
             $("#side_city").slideUp();
 
-            $("#side_city").width("100%");
+            $("#side_city").width("100vw");
+            $("#city_list").show();
         }
     });
 });
