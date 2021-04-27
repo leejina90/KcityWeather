@@ -79,27 +79,6 @@ $(function(){
             }
         }
     });
-
-
-    $(window).resize(function(){
-        var width = $(window).width();
-        
-        if(width > 767) {
-            $("li").eq(3).hide();
-            $("li").eq(4).hide();
-        
-            if ($("#mobile_menu").is(":visible")) {
-                $(".mobile.hamburger").show();
-                $(".mobile.close").hide();
-        
-                $("#main_header").height(390);
-                $("#main_content").show();
-                $("#main_footer").show();
-        
-                $("#mobile_menu").hide();
-            }
-        }
-    });
 });
 
 
