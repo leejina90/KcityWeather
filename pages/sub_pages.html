@@ -6,23 +6,28 @@
 <title>KcityWeather</title>
 <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.min.css">
 <link rel="stylesheet" href="../css/common.css">
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/sub.css">
 </head>
 <body>
+    <div id="bg_cover"></div>
     <header id="main_header">
         <div id="logo">
             <a href="#">
-                <img src="../img/logo_W.png" alt="KcityWeather logo">
+                <img src="../images/logo_W.png" alt="KcityWeather logo">
             </a>
-        </div>
-        <div id="daytime">
-            <span class="day"></span> 
-            <span>|</span>
-            <span class="month"></span>
-            <span class="date"></span>
-            <span class="hours"></span>
-            <span>:</span>
-            <span class="minutes"></span>
+        </div> 
+        <div id="daytime_info">
+            <div class="daytime">
+                <span class="day"></span> 
+                <span>|</span>
+                <span class="month"></span>
+                <span class="date"></span>
+            </div>
+            <div id="time" class="daytime">
+                <span class="hours"></span>
+                <span>:</span>
+                <span class="minutes"></span>
+            </div>
         </div>
     </header>
     <main id="main_content">
@@ -46,8 +51,9 @@
             </div>
         </div>
     </main>
+    <button id="arrow">◀</button>
+    <button id="arrow_mobile">▼</button>
     <side id="side_city">
-        <button id="arrow"><</button>
         <div id="city_list">
             <a href="#" class="city_link">
                 <span class="city" id="Seoul">Seoul</span>
@@ -96,8 +102,6 @@
     </footer>
 	<!--js 파일-->
 	<script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/responsive.js"></script>
-    <script src="../js/forecast.js"></script>
 	<script src="../js/common.js"></script>
 	<script src="../js/sub.js"></script>
 
