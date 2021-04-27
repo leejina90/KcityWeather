@@ -202,7 +202,7 @@ body {
 }
 
 /* button */
-button#arrow {
+.arrow_btn {
     position: fixed;
     top: 0;
     right: 0;
@@ -215,17 +215,7 @@ button#arrow {
     color: #fff;
 }
 button#arrow_mobile {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    border: none;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 999;
     display: none;
-    color: #fff;
 }
 
 /* side_city */
@@ -328,6 +318,11 @@ button#arrow_mobile {
     }
 
     /* button */
+    .arrow_btn {
+        width: 75px;
+        height: 75px;
+        font-size: 40px;
+    }
     button#arrow {
         display: none;
     }
