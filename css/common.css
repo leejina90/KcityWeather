@@ -112,6 +112,7 @@
 body {
     font: 14px "NotoSansKR";
     color: #fff;
+    font-weight: 500;
     height: 100vh;
     background-size: cover;
     background-position: 50% 50%;
@@ -119,7 +120,9 @@ body {
     z-index: -999;
     -ms-overflow-style: none;
 }
-::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar { 
+    display: none; 
+}
 #bg_cover {
     width: 100vw;
     height: 100vh;
@@ -168,31 +171,33 @@ body {
 }
 #main_content > .inner .city_main {
     font-size: 10em;
+    font-weight: 700;
 }
 #main_content > .inner .city_temp {
     font-size: 7em;
     line-height: 0px;
+    font-weight: 700;
 }
 #main_content > .inner .city_icon {
     font-size: 6em;
     margin-left: 60px;
 }
-#main_content > .inner #etc {
+#main_content > .inner #city_info {
     width: 360px;
     overflow: hidden;
     margin-top: 30px;
 }
-#main_content > .inner #etc .etc {
+#main_content > .inner #city_info .info {
     width: 33.3%;
     float: left;
     font-size: 2.5em;
     text-align: center;
     border-right: 2px solid #fff;
 }
-#main_content > .inner #etc .etc:first-child {
+#main_content > .inner #city_info .info:first-child {
     border-left: 2px solid #fff;
 }
-#main_content > .inner #etc .etc i {
+#main_content > .inner #city_info .info i {
     display: block;
 }
 
@@ -237,7 +242,7 @@ button#arrow_mobile {
 
 #side_city #city_list {
     padding-top: 100px;
-    display: block;
+    display: none;
 }
 #side_city a.city_link {
     display: block;
@@ -262,6 +267,7 @@ button#arrow_mobile {
 /* main_footer */
 #main_footer {
     margin-left: 50px;
+    color: #ddd;
     font-style: italic;
     height: 50px;
     line-height: 50px;
@@ -314,10 +320,10 @@ button#arrow_mobile {
         font-size: 5em;
         margin-left: 40px;
     }
-    #main_content > .inner #etc {
+    #main_content > .inner #city_info {
         width: 300px;
     }
-    #main_content > .inner #etc .etc {
+    #main_content > .inner #city_info .info {
         font-size: 2em;
     }
 
@@ -341,12 +347,22 @@ button#arrow_mobile {
         display: block;
     }
     #side_city a.city_link {
-        padding: 10px 100px;
+        padding: 3% 100px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
+    /* main_content */
+    #main_content {
+        height: 480px;
+    }
+    #main_content .inner {
+        margin: 100px 50px;
+    }
+    /* side_city */
+    #side_city a.city_link {
+        padding: 3% 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
