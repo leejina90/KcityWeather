@@ -123,6 +123,12 @@ body {
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+/* YTPlayer */
+#bg_player {
+    z-index: -998;
+}
+
 #bg_cover {
     width: 100vw;
     height: 100vh;
@@ -130,7 +136,7 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    z-index: -998;
+    z-index: -997;
 }
 
 /* main_header */
@@ -228,6 +234,8 @@ button#arrow_mobile {
     height: 100%;
     background-color: rgba(55,55,55,0.5);
     transition-duration: 1s;
+    z-index: 998;
+    overflow: scroll;
 }
 
 #side_city #city_list {
@@ -336,7 +344,6 @@ button#arrow_mobile {
         height: 100vh;
         background-color: rgba(58, 58, 58,1);
         display: none;
-        overflow: scroll;
     }
     #side_city #city_list {
         display: block;
@@ -363,4 +370,3 @@ button#arrow_mobile {
 @media screen and (min-width: 1024px) {
 
 }
-

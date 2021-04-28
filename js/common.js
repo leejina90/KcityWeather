@@ -58,17 +58,6 @@ $(function(){
 });
 // 반응형 end
 
-// 마우스오버된 클래스 하나만 적용되게 수정해야함
-// $(function(){
-//     $(".city_link").on({
-//         "mouseover focus" : function() {
-//             $(".city_link").css({
-//                 "font-size":"3em"
-//             });
-//         }
-//     });
-// });
-
 // 날씨 정보 start
 function Forecast() {
     this.url = "http://api.openweathermap.org/data/2.5/weather";
@@ -165,5 +154,11 @@ $(".month").append(monthEngName[d.getMonth()]);
 
 $(".date").append(d.getDate());
 $(".hours").append(d.getHours());
-$(".minutes").append(d.getMinutes());
+$(".minutes").append(("00" + d.getMinutes()).slice(-2)); // 00~59 형식으로 출력
 // 현재 날짜, 시간 정보 end
+
+// YTPlayer start
+jQuery( function() {
+    jQuery("#bg_player").YTPlayer();
+});
+// YTPlayer end

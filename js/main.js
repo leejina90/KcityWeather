@@ -19,3 +19,18 @@ $(function(){
         }
     });
 });
+
+// YTPlayer
+$("#bg_player").data("property", {
+    videoURL: 'ODLK5cWivWo',
+    mute: true,
+    showControls: false,
+    useOnMobile: true,
+    quality: 'highres',
+    containment: 'body',
+    loop: true,
+    autoPlay: true,
+    stopMovieOnBlur: false,
+    startAt: 0,
+    opacity: 1
+});
