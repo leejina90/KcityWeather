@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KcityWeather</title>
 <link rel="stylesheet" href="library/fontawesome-free-5.15.3-web/css/all.min.css">
 <link rel="stylesheet" href="library/jquery.mb.YTPlayer-master/dist/css/jquery.mb.YTPlayer.min.css">
@@ -37,7 +37,7 @@
         <div class="inner">
             <p class="city_main"></p>
             <span class="city_temp"></span>
-            <span class="city_icon"><img src="" alt="" id="city_img"></span>
+            <span class="city_icon"></span>
             <div id="city_info">
                 <div class="info">
                     <i class="fas fa-tint"></i>
@@ -56,7 +56,7 @@
     </main>
     <button id="arrow" class="arrow_btn">◀</button>
     <button id="arrow_mobile" class="arrow_btn">▼</button>
-    <side id="side_city">
+    <div id="side_city">
         <div id="city_list">
             <a href="#" class="city_link">
                 <span class="city" id="Seoul">Seoul</span>
@@ -91,9 +91,14 @@
                 <span class="temp">-℃</span>
             </a>
         </div>
-    </side>
+    </div>
     <footer id="main_footer">
         <p>현재 사이트는 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.</p>
+        <!-- <p>
+            <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))">
+                <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80">
+            </a>
+        </p> -->
     </footer>
 	<!--js 파일-->
 	<script src="js/jquery-3.6.0.min.js"></script>
