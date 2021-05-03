@@ -118,6 +118,7 @@ body {
     background-position: 50% 50%;
     min-width: 320px;
     z-index: -999;
+    overflow: hidden;
     -ms-overflow-style: none;
 }
 ::-webkit-scrollbar { 
@@ -275,13 +276,14 @@ button#arrow_mobile {
 @media screen and (max-width: 767px) {
     /* main_header */
     #main_header {
-        height: 200px;
-        line-height: 50px;
+        height: 160px;
+        line-height: 40px;
         overflow: visible;
     }
     #main_header > #logo {
         float: none;
-        margin-top: 30px;
+        margin-top: 20px;
+        padding-left: 30px;
     }
     #main_header #daytime_info {
         float: none;
@@ -289,40 +291,40 @@ button#arrow_mobile {
         padding-right: 0px;
         left: 0;
         right: 0;
-        padding-left: 40px;
-        margin-top: 70px;
+        padding-left: 30px;
+        margin-top: 30px;
         overflow: visible;
     }
     #main_header #daytime_info .daytime {
         float: none;
     }
     #main_header #daytime_info #time {
-        font-size: 2em;
+        font-size: 1.3em;
         padding-left: 0px;
     }
     /* main_content */
     #main_content {
-        height: 530px;
+        height: 350px;
     }
     #main_content .inner {
-        margin: 100px 50px;
+        margin: 50px 30px;
     }
     #main_content > .inner .city_main {
-        font-size: 8em;
+        font-size: 5.5em;
     }
     #main_content > .inner .city_temp {
-        font-size: 6em;
+        font-size: 4em;
 
     }
     #main_content > .inner .city_icon {
-        font-size: 5em;
-        margin-left: 40px;
+        font-size: 4em;
+        margin-left: 20px;
     }
     #main_content > .inner #city_info {
-        width: 300px;
+        width: 210px;
     }
     #main_content > .inner #city_info .info {
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     /* button */
@@ -345,11 +347,14 @@ button#arrow_mobile {
         background-color: rgba(58, 58, 58,1);
         display: none;
     }
-    #side_city #city_list {
-        display: block;
-    }
     #side_city a.city_link {
-        padding: 3% 100px;
+        padding: 3% 50px;
+    }
+    /* main_footer */
+    #main_footer {
+    margin: 0 30px;
+    height: 20px;
+    line-height: 20px;
     }
 }
 

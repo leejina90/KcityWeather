@@ -9,7 +9,7 @@ $(function(){
                 $("#daytime_info").css({
                     "right":"400px"
                 });
-                $("#city_list").show();
+                $("#city_list").delay(400).slideToggle(1000);
             } else {
                 $("#side_city").width(50);
                 $("#arrow").text("◀");
@@ -27,11 +27,11 @@ $(function(){
             if($("#side_city").is(":hidden")) {
                 $("#side_city").slideDown(500);
                 $("#arrow_mobile").text("▲");
-                $("#city_list").show();
+                $("#city_list").slideDown(1200);
             } else {
                 $("#side_city").slideUp(500);
                 $("#arrow_mobile").text("▼");
-                $("#city_list").hide();
+                $("#city_list").slideUp(700);
             }
         }
     });
@@ -44,15 +44,18 @@ $(function(){
             $("#side_city").slideDown();
 
             $("#side_city").width(50);
+            $("#arrow").text("◀");
             $("#city_list").hide();
 
-
+            $("#daytime_info").css({
+                "right":"50px"
+            });
         } else {
             $("#arrow_mobile").show();
             $("#side_city").slideUp();
 
             $("#side_city").width("100vw");
-            $("#city_list").show();
+            $("#city_list").hide();
         }
     });
 });
@@ -152,7 +155,7 @@ $(".day").append(dayEngName[d.getDay()]);
 var monthEngName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 $(".month").append(monthEngName[d.getMonth()]);
 
-$(".date").append(d.getDate());
+$(".date").append(("00" + d.getDate()).slice(-2)); // 01~31 형식으로 출력
 $(".hours").append(d.getHours());
 $(".minutes").append(("00" + d.getMinutes()).slice(-2)); // 00~59 형식으로 출력
 // 현재 날짜, 시간 정보 end
