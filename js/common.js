@@ -63,7 +63,7 @@ $(function(){
 
 // 날씨 정보 start
 function Forecast() {
-    this.url = "http://api.openweathermap.org/data/2.5/weather";
+    this.url = "https://api.openweathermap.org/data/2.5/weather";
     this.url += "?units=" + "metric";
     this.url += "&lang=" + "kr";
     this.url += "&APPID=" + "91b7464ae7657f4df26a893c764f396d";
